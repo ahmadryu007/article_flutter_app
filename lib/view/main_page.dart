@@ -49,11 +49,11 @@ class _MainPageState extends State<MainPage> {
                     height: 1,
                     color: Colors.black26,
                   ),
-                  const Padding(
-                    padding: EdgeInsets.all(20.0),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
                     child: Text(
                       'LATEST NEWS',
-                      style: headlineText,
+                      style: AppTheme.headlineText,
                     ),
                   ),
                   Container(

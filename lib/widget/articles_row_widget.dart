@@ -1,4 +1,5 @@
 import 'package:articles_app/config/config.dart';
+import 'package:articles_app/util/utility.dart';
 import 'package:flutter/material.dart';
 
 class ArticlesRowWidget extends StatelessWidget {
@@ -31,15 +32,15 @@ class ArticlesRowWidget extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Text(subtitle, style: titlePrimary),
+          Text(subtitle, style: AppTheme.titlePrimary),
           const SizedBox(
             height: 20,
           ),
-          Text(title, style: headlineText),
+          Text(title, style: AppTheme.headlineText),
           const SizedBox(
             height: 20,
           ),
-          Text(globalDateFormat.format(created), style: dateText,),
+          Text(Utility.calculateTimeRange(created), style: AppTheme.dateText,),
           const SizedBox(
             height: 10,
           ),

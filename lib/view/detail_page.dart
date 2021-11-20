@@ -54,7 +54,7 @@ class DetailPageState extends State<DetailPage> {
             padding: const EdgeInsets.all(15.0),
             child: Text(
               widget.article.id,
-              style: titlePrimary,
+              style: AppTheme.titlePrimary,
             ),
           )
         ],
@@ -80,7 +80,7 @@ class DetailPageState extends State<DetailPage> {
         children: [
           Text(
             widget.article.title,
-            style: headlineText,
+            style: AppTheme.headlineText,
             textAlign: TextAlign.start,
           ),
           const SizedBox(
@@ -88,10 +88,10 @@ class DetailPageState extends State<DetailPage> {
           ),
           Text(
             widget.article.contributorName,
-            style: titlePrimary.copyWith(fontSize: 15),
+            style: AppTheme.titlePrimary.copyWith(fontSize: 15),
           ),
           Text(globalDateFormat.format(widget.article.createdAt),
-              style: dateText)
+              style: AppTheme.dateText)
         ],
       ),
     );
@@ -155,7 +155,7 @@ class DetailPageState extends State<DetailPage> {
       padding: const EdgeInsets.all(20.0),
       child: Text(
         widget.article.content,
-        style: bodyText,
+        style: AppTheme.bodyText,
         textAlign: TextAlign.start,
       ),
     );
